@@ -15,6 +15,16 @@ int GetSumm(string inBox)
     return result;
 }
 
-Console.Write("Введите число: ");
-string box = Console.ReadLine();
-Console.WriteLine($"{box} -> {GetSumm(box)}");
+string SetVal()
+{
+    Console.Write("Введите число: ");
+    return Console.ReadLine();
+}
+
+void GetResult(string box)
+{
+    Console.WriteLine($"{box} -> {GetSumm(box)}");
+}
+
+string box = SetVal();
+GetResult(box);

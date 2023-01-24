@@ -10,8 +10,25 @@ int GetAnsw(int numA, int numB)
     return result;
 }
 
-Console.Write("Введите число А: ");
-int numA = int.Parse(Console.ReadLine());
-Console.Write("Введите число В: ");
-int numB = int.Parse(Console.ReadLine());
-Console.WriteLine($"{numA}, {numB} -> {GetAnsw(numA, numB)}");
+int SetValA()
+{
+    Console.Write("Введите число А: ");
+    int numA = int.Parse(Console.ReadLine());
+    return numA;
+}
+
+int SetValB()
+{
+    Console.Write("Введите число В: ");
+    int numB = int.Parse(Console.ReadLine());
+    return numB;
+}
+
+void GetResult(int numA, int numB)
+{
+    Console.WriteLine($"{numA}, {numB} -> {GetAnsw(numA, numB)}");
+}
+
+int numA = SetValA();
+int numB = SetValB();
+GetResult(numA, numB);

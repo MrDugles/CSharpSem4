@@ -12,6 +12,11 @@ void GetNum(int number)
     }
 }
 
-Console.Write("Задайте размерность массива: ");
-int num = int.Parse(Console.ReadLine());
+int SetVal()
+{
+    Console.Write("Задайте размерность массива: ");
+    return int.Parse(Console.ReadLine());
+}
+
+int num = SetVal();
 GetNum(num);
