@@ -10,7 +10,7 @@ int GetSumm(string inBox)
     for (int i = 0; i < inBox.Length; i++)
     {
         result += num % 10;
-        num = num / 10;
+        num /= 10;
     }
     return result;
 }
